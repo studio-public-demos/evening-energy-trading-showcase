@@ -16,12 +16,15 @@ A headline power price does not reveal trader profit. Commercial teams must dist
 The evaluator compares flat schedules and residual block profiles, calculates energy and illustrative contribution, and flags incomplete assumptions or invalid margin allocations. The showcase presents the resulting user experience and decision outputs.
 
 ## Live Demo
-[Open the hosted demonstration video](https://studio-public-demos.github.io/evening-energy-trading-showcase/assets/videos/walkthrough.webm). This is a recorded demonstration of the working evaluator using synthetic data. There is no public interactive calculator; its implementation remains private.
+[Open the interactive commercial dashboard](https://studio-public-demos.github.io/evening-energy-trading-showcase/). Change sample assumptions, compare funding and network scenarios, and inspect the resulting contribution. All public values are synthetic.
 
 ## Demo Video
 [Watch the walkthrough](assets/videos/walkthrough.webm): schedule sizing, contribution, funding-cost sensitivity, allocation validation and a network-limited profile. On-screen captions explain each example; the recording has no narration.
 
 ## Project Screenshots
+
+![Interactive dashboard overview](assets/screenshots/07-dashboard-overview.png)
+[View the dashboard on mobile](assets/screenshots/08-dashboard-mobile.png).
 ![Scheduled volume](assets/screenshots/01-volume.png)
 ![Commercial contribution](assets/screenshots/02-contribution.png)
 ![Cost sensitivity](assets/screenshots/03-cost-sensitivity.png)
@@ -51,7 +54,7 @@ Power trading commercial teams, utility procurement analysts, finance reviewers 
 Compare a proposed schedule with network headroom; examine funding-cost exposure; identify missing inputs before a term-sheet discussion; communicate a scenario to commercial reviewers.
 
 ## Technical Highlights (High-Level Only)
-Browser-based scenario evaluation, responsive input forms, immediate calculated outputs and printable summaries. The public package contains documentation, rendered media and synthetic result files only.
+Browser-based scenario evaluation, responsive input forms, immediate calculated outputs and printable summaries. The public package includes an HTML dashboard demonstrator, documentation, rendered media and synthetic result files. The public dashboard contains inspectable presentation code and basic scenario arithmetic; it does not include the original private implementation, datasets, workflows or build scripts.
 
 ## Architecture Overview (Conceptual Only)
 ![Commercial decision journey](assets/diagrams/conceptual-journey.svg)
@@ -73,7 +76,7 @@ Functional checks on the captured synthetic scenarios verified:
 | Allocation exceeds selected ceiling | Warning; contribution withheld |
 | Desktop and mobile browser checks | No uncaught page errors; no mobile page overflow |
 
-These checks establish scenario behavior, not speed, business outcomes or transaction feasibility.
+These checks establish scenario behavior, not speed, business outcomes or transaction feasibility. The hosted dashboard adds preset comparisons and editable assumptions to the recorded walkthrough.
 
 ## Attribution
 See [ATTRIBUTIONS.md](ATTRIBUTIONS.md). No third-party photographs, logos or datasets are redistributed. Public scenario values are synthetic.
@@ -86,3 +89,4 @@ Explore the [public showcase catalogue](https://studio-public-demos.github.io/) 
 
 ## Call to Action
 Request a private demonstration or a tailored commercial evaluator through [NebulaCloud Studio](https://nebulacloud.studio/). Bring your proposed delivery period, buyer profile, source availability and commercial assumptions to scope the discussion.
+
